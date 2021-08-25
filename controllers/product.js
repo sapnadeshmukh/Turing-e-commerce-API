@@ -5,16 +5,24 @@ const knex=require('../database/connection')
 module.exports.get_products=async(req,res)=>{
     
 
-        knex.select ('*').from ('product')
-        .then((data) =>{
-            console.log(data);
-            res.send({"data":data})
+      
+        knex()
+        .select("*")
+        .from("product")
+        .then((data) => {
+        var wholeData = {
+            count: data.length,
+            rows: data
+        }
+        console.log(wholeData)
 
-        }).catch((err) =>{
-            console.log(err);
-            res.json({"message":err})
-
+        res.send(wholeData)
         })
+        .catch((err) => {
+        console.log(err)
+        res.send(err)
+        })
+
     
 }
 
