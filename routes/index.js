@@ -23,7 +23,19 @@ router.use('/productByCategoryID',require('./productBycategoryIdRoute'))
 router.use('/productByDepartmentID',require('./productByDepartmentIdRoute'))
 router.use('/productByDetails',require('./productByDetailsRoute'))
 router.use('/productByLocation',require('./productByLocationRoute'))
-// router.use('/postreview',require('./productPostReviewRoute'))
+router.use('/postreview',require('./productPostReviewRoute'))
+router.use('/productGetReview',require('./productGetReviewRoute'))
+
+
+router.use('/customerRegister',require('./customerRegisterRoute'))
+router.use('/customerLogin',require('./customerLoginRoute'))
+router.use('/customerUpdateAddress',require('./customerUpdateAddressRoute'))
+router.use('/customerByid',require('./customerGetByIDRoute'))
+router.use('/updateCustomer',require('./customerUpdateRoute'))
+router.use('/customerCreditcard',require('./customerCreditcardRoute'))
+
+
+
 
 
 

@@ -22,6 +22,7 @@ module.exports.productByLocation=(req,res)=>{
     })
     .where('product.product_id', product_id)
     .then((data) =>{
+        console.log(data)
         res.send(data);
     }).catch((err) =>{
         console.log(err);
