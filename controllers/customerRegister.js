@@ -1,6 +1,5 @@
 const knex=require('../database/connection')
 const jwt=require('jsonwebtoken')
-// const jwtToken=require('../middleware/createToken')
 const {tokenData ,authenticateToken}=require('../middleware/createToken')
 
 

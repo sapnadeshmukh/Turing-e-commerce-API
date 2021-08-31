@@ -35,14 +35,25 @@ router.use('/updateCustomer',require('./customerUpdateRoute'))
 router.use('/customerCreditcard',require('./customerCreditcardRoute'))
 
 
+router.use('/shoppingcard_genId',require('./shoppingcart_generateUniqueIdRoute'))
+router.use('/shoppingcartadd',require('./shoppingcartAddRoute'))
+router.use('/shoppingcartBycartID',require('./shopppingcartBycartIDRoute'))
+router.use('/shoppingcartupdate',require('./shoppingCartUpdateRoute'))
+router.use('/shoppingcartempty',require('./shoppingcartemptyRoute'))
 
 
 
 
+router.use('/alltax',require('./taxRoute'))
+router.use('/taxbyID',require('./taxbyIdRoute'))
+
+router.use('/shipping',require('./shippingRoute'))
+router.use('/shippingbyID',require('./shippingbyIdRoute'))
 
 
-
-
+router.use('/order',require('./orderRoute'))
+router.use('/orderbyid',require('./orderByorderIDRoute'))
+router.use('/orderInCustomer',require('./orderIncustomerRoute'))
 
 
 module.exports=router

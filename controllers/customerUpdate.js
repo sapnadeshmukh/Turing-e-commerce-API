@@ -10,7 +10,6 @@ module.exports.updateCustomer=(res,req)=>{
     console.log(TOKEN[0]);
         
         if(token!=undefined){
-            console.log("saaaaaa")
             const data=authenticateToken(TOKEN[0],process.env.SECRETKEY)
 
 
