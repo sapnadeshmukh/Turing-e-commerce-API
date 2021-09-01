@@ -40,6 +40,16 @@ router.use('/shoppingcartadd',require('./shoppingcartAddRoute'))
 router.use('/shoppingcartBycartID',require('./shopppingcartBycartIDRoute'))
 router.use('/shoppingcartupdate',require('./shoppingCartUpdateRoute'))
 router.use('/shoppingcartempty',require('./shoppingcartemptyRoute'))
+router.use('/shoppingcartMoveTocart',require('./shoppingMovetocartRoute'))
+router.use('/shoppingcarttotalamount',require('./shoppingcartTotalamoutRoute'))
+router.use('/shoppingcartsaveforlater',require('./shoppingcartsaveforlaterRoute'))
+router.use('/shoppingcartgetsaved',require('./shoppingcartGetsavedRoute'))
+router.use('/shoppingcartremoveproduct',require('./shoppingcartRemoveProductRoute'))
+
+
+
+
+
 
 
 
@@ -54,6 +64,8 @@ router.use('/shippingbyID',require('./shippingbyIdRoute'))
 router.use('/order',require('./orderRoute'))
 router.use('/orderbyid',require('./orderByorderIDRoute'))
 router.use('/orderInCustomer',require('./orderIncustomerRoute'))
+router.use('/ordershortDetails',require('./ordershortDetailsRoute'))
+
 
 
 module.exports=router
